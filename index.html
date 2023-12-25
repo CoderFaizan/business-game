@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/earnings.css">
+
+
+</head>
+<body>
+    <div class="main" id="main">
+        <div class="slide" id="slide">
+            <h2 id="slide-logo">Business</h2>
+        </div>
+
+        <div class="one_screen" id="one_screen">
+            <div class="top">
+                <div class="one_screen_top_first" id="one_screen_top_first">
+                    <h2 class="Earning_title">Earnings_</h2>
+                    <div class="b">
+                        <div class="balance">Balance:</div>
+                        <div class="one_rs">Rs.</div>
+                        <div class="Main_Balance" id="Main_Balance">10</div></div>
+                </div>
+                <div class="one_screen_top_second" id="one_screen_top_second">
+                    
+                    <div class="rs">Rs.</div>
+                    <div class="cash" id="cash">1</div>
+                    <div class="per">Per Click</div>
+                    <div class="level">Level:</div>
+                    <div class="level-digit" id="level_digit">0</div>
+                        <button id="click" class="click" onclick="Earn()">Click</button>
+                </div>
+                <div class="one_screen_top_third" id="one_screen_top_third">
+                    <div class="next">
+                        <p class="level" id="level">Next Level </p>
+                        <button class="cash_new_level" id="cash_new_level" onclick="changeLevel()">Rs.<div id="Amount" style="cursor: pointer;">100</div></button>
+                    </div>
+                </div>
+            </div>    
+            <div class="progress" id="progress">
+                <div class="progress_show" id="progress_show"></div>
+                <span id="progress_time">100</span>s
+            </div>
+                <div class="cycle_income" >Rs.<span id="cycle_income">10</span></div>
+            <div class="info">
+                <div class="profile">Profile</div>
+                <hr class="profile_line">
+                <div class="alpha one">Earing By Click : <div class="total_earn_click" id="total_earn_click">00</div>  </div>
+                <div class="alpha two">Earing By Progress : <div class="total_earn_buseiness" id="total_earn_business">00</div>  </div>
+            </div>
+        </div>
+
+        <div class="two_screen screen" id="two_screen screen2">
+            screen2
+        </div>
+        <div class="three_screen screen" id="three_screen screen3">
+            <h2>Business</h2>
+            <div class="show_income">
+                <div class="income_text">Rs.<p class="income">20,202,020</p></div>
+                <p class="text_income">Total Income Per Cycle</p>
+            </div>
+
+            <div class="business_list">b</div>
+        </div>
+        <div class="four_screen screen" id="four_screen screen4">
+            screen4
+        </div>
+        <div class="five_screen screen" id="five_screen screen5">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga molestias provident excepturi dignissimos aliquid ipsa repellendus eos at beatae dolore dolor assumenda, rem sunt consectetur quos mollitia eligendi quasi tempora?
+        </div>
+        <div class="menu" id="menu">
+            <div class="menu-item menu-item1" id="menu-item1" onclick="changeScreen(1);"><div class="ic">A</div><p>Earnings</p></div>
+            <div class="menu-item menu-item2" id="menu-item2" onclick="changeScreen(2);"><div class="ic">A</div><p>Investing</p></div>
+            <div class="menu-item menu-item3" id="menu-item3" onclick="changeScreen(3);"><div class="ic">A</div><p>Business</p></div>
+            <div class="menu-item menu-item4" id="menu-item4" onclick="changeScreen(4);"><div class="ic">A</div><p>Items</p></div>
+            <div class="menu-item menu-item5" id="menu-item5" onclick="changeScreen(5);"><div class="ic">A</div><p>Profile</p></div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/main.js"></script>
+<script src="js/earn.js"></script>

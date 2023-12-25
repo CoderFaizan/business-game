@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.main{
+    width: 250px;
+    height: 500px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.slide{
+    background-color: rgb(88, 133, 206);
+    width: 250px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: 0px;
+    transition: 2s ease;
+    z-index: 10;
+}
+.slide h2{
+    margin-left: -400px;
+    font-size: 5px;
+    letter-spacing: 1px;
+}
+
+
+.menu{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: -10%;
+    left: 0px;
+    right: 0;
+    transition: 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px -1px 4px rgba(0, 0, 0, .3);
+}
+.menu-item{
+    width: 19%;
+    height: 100%;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.menu-item p{
+    font-size: 13px;
+}
+#menu-item1{
+    color: blue;
+    border-top: 1px solid blue;
+    border-bottom: 1px solid blue;
+}
+.one_screen{
+    width: 250px;
+    height: 445px;
+    position: relative;
+    right: 0px;
+    top: -250px;
+    transition: 1s ease;
+}
+.one_screen .top{
+    width: 250px;
+    height: 180px;
+    background: linear-gradient(to right , rgb(123, 147, 123) , rgb(83, 83, 143) 60%) ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.one_screen_top_first{
+    width: 230px;
+    height: 50px;
+    border-radius: 10px;
+    background: rgb(51, 51, 51);
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, .1);
+}
+.Earning_title{
+    font-size: 18px;
+    width: 100px;
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 5px;
+    margin-left: 10px;
+    color: white;
+}
+.b{
+    display: flex;
+    margin-top: 7px;
+    position: relative;
+    color: white;
+}
+.balance{
+    font-size: 8px;
+    position: absolute;
+    color: white;
+    top: -10px;
+    left: 10px;
+}
+.one_rs{
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    font-size: 15px;
+}
+.Main_Balance{
+    background-color: rgba(255, 255, 255, .3);
+    width: max-content;
+    height: 18px;
+    line-height: 18px;
+    font-size: 20px;
+    position: absolute;
+    left: 52px;
+    top: -3px;
+    padding: 0 3px;
+    box-shadow: 0px 0px 2px rgba(255, 255, 255, .3);
+    z-index: 0;
+}
+
+.one_screen_top_second{
+    width: 230px;
+    height: 50px;
+    border-radius: 10px;
+    background: rgb(50, 53, 53);
+    color: white;
+    box-shadow: inset 1px 1px 10px rgba(255, 255, 255, .8);
+    position: relative;
+}
+.one_screen_top_second .rs{
+    position: absolute;
+    top: 18px;
+    left: 15px;
+}
+.one_screen_top_second .cash{
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    font-size: 25px;
+}
+.one_screen_top_second .per{
+    position: absolute;
+    left: 100px;
+    top: 32px;
+    font-size: 10px;
+}
+.one_screen_top_second .level{
+    position: absolute;
+    right: 38px;
+    font-size: 10px;
+    top: 8px;    
+}
+.one_screen_top_second .level-digit{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    text-align: center;
+    width: 30px;
+    font-size: 14px;
+    box-shadow: .1px .1px 1px rgba(255, 255, 255, .8);
+}
+.one_screen_top_third{
+    width: 230px;
+    height: 50px;
+    border-radius: 10px;
+    background: linear-gradient(to right , rgb(103, 107, 123)  , rgb(53, 8, 103)  , rgb(93, 3, 103) 90%) ;
+    position: relative;
+}
+.one_screen_top_third .level{
+    position: absolute;
+    color: white;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+}
+.one_screen_top_third .cash_new_level{
+    position: absolute;
+    left: 120px;
+    width: 60px;
+    top: 10px;
+    height: 30px;
+    font-size: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.progress{
+    background-color: rgb(189, 175, 175);
+    width: 230px;
+    height: 12px;
+    border-radius: 10px;
+    position: absolute;
+    top: 185px;
+    left: 10px;
+    font-size: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: 1s ease ;
+    z-index: 0;
+    color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+}
+.progress_show{
+    color: white;
+    background-color: rgb(86, 66, 66);
+    width: 0%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    z-index: -1;
+}
+.click{
+    position: absolute;
+    right: 40px;
+    top: 25px;
+    font-size: 12px;
+    width: 40px;
+    cursor: pointer;
+}
+.info{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 20px;
+    border-radius: 10px;
+    left: 25px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0,.5);
+}
+.info .profile{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.profile_line{
+    width: 40%;
+    margin: auto;
+    height: .1px;
+}
+#pc{
+    font-size: 10px;
+}
+.alpha{
+    display: flex;
+    margin: 5px auto 0 auto;
+    width: 95%;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: .1px solid black;
+    padding-bottom: 4px;
+    font-size: 15px;
+    border-radius: 30px;
+}
+.cycle_income{
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    font-size: 12px;
+}
+.screen{
+    width: 250px;
+    height: 450px;
+    /* background-color: red; */
+    position: absolute;
+    top: -500px;
+    transition:2s ease ;
+
+}

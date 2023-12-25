@@ -1,0 +1,51 @@
+.three_screen{
+    overflow-y: scroll;
+    background-color: white;
+}
+.three_screen h2{
+    font-size: 29px;
+    width: 90%;
+    margin: 20px auto;
+}
+.three_screen .show_income{
+    background-color: rgba(201, 199, 199,.5);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+}
+.three_screen .income_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    line-height: 40px;
+    margin-left: -50px;
+    margin-top: -5px;
+}
+.three_screen .income_text .income{
+    font-size: 26px;
+    line-height: 20px;
+    margin-top: -5px;
+}
+.three_screen .show_income .text_income{
+    color: red;
+    font-size: 12px;
+    margin-left: 26px;
+    margin-top: -19px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+}
+.business_list{
+    
+    background-color: rgba(201, 199, 199,.5);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 10px;
+    height: 600px;
+
+}
